@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211 55" role="img" aria-label="AVES">
+ <g transform="translate(0 4.5)" fill="none" stroke="#13294B" stroke-width="7"
+    stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 7.5 46 L 28.5 0 L 49.5 46"/>
+  <path d="M 15.5 28 L 41.5 28"/>
+  <path d="M 64.5 0 L 84.5 46 L 104.5 0"/>
+  <path d="M 154.5 0 L 119.5 0 L 119.5 46 L 154.5 46"/>
+  <path d="M 119.5 23 L 147.5 23"/>
+  <path d="M 202.5 10 C 202.5 3.5 195.5 0 187 0 C 178 0 171 4.5 171 11 C 171 18 178.5 20 187.5 22 C 196.5 24 203 26.5 203 34 C 203 41.5 195.5 46 186.5 46 C 177.5 46 170 42 170 35"/>
+ </g>
+</svg>

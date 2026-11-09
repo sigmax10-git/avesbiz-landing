@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>복합기 임대 · IT 서비스 | AVES</title>
+<meta name="description" content="AVES는 최신 복합기·프린터 임대와 실시간 원격 모니터링, 네트워크·보안·헬프데스크까지 기업의 사무 인프라와 IT 운영을 통합 지원합니다. 부산·울산·경남.">
+<meta name="keywords" content="복합기 임대, 프린터 임대, 복합기 렌탈, 사무기기 임대, 복합기 원격 모니터링, IT 서비스, 네트워크 구축, 헬프데스크, 기업 IT 운영, 부산 복합기, 울산 복합기, 경남 복합기">
+<link rel="canonical" href="https://avesbiz.co.kr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVES">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://avesbiz.co.kr/">
+<meta property="og:title" content="복합기 임대 · IT 서비스 | AVES">
+<meta property="og:description" content="최신 복합기 임대부터 실시간 원격 모니터링, 기업 IT 운영까지. 업무가 멈추지 않는 사무 환경을 만듭니다.">
+<meta property="og:image" content="https://avesbiz.co.kr/mfp-1.png">
+<link rel="icon" href="aves-logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AVES",
+  "url": "https://avesbiz.co.kr/",
+  "email": "contact@avesbiz.co.kr",
+  "description": "복합기·프린터 임대, 원격 모니터링, 기업 IT 운영 서비스",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "부산광역시" },
+    { "@type": "AdministrativeArea", "name": "울산광역시" },
+    { "@type": "AdministrativeArea", "name": "경상남도" }
+  ]
+}
+</script>
+<style>
+:root{
+  --blue:#3B82F6; --blue-d:#2563EB; --blue-l:#60A5FA; --blue-bg:#EFF5FF;
+  --ink:#13294B; --ink-2:#27405F; --muted:#5A6C8A; --line:#E0E8F3;
+  --bg:#F6F9FD; --navy:#0E2039; --navy-line:rgba(255,255,255,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{
+  margin:0;
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  color:var(--ink);background:#fff;line-height:1.65;
+  -webkit-font-smoothing:antialiased;word-break:keep-all;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+.container{width:min(1200px,calc(100% - 48px));margin:0 auto}
+h1,h2,h3,h4{margin:0;letter-spacing:-.03em;font-weight:800;line-height:1.18}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--blue);text-transform:uppercase}
+.sec-head{max-width:760px;margin:0 0 56px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head h2{font-size:clamp(28px,3.4vw,42px);margin:14px 0 18px}
+.sec-head p{font-size:17px;color:var(--muted);margin:0}
+.section{padding:clamp(72px,8.5vw,120px) 0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:15px 26px;border-radius:8px;font-weight:700;font-size:15px;
+  border:1px solid transparent;cursor:pointer;transition:background .18s,border-color .18s,color .18s;font-family:inherit}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--blue-d)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn-ondark{border-color:rgba(255,255,255,.28);color:#fff;background:transparent}
+.btn-ondark:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
+.btn-lg{padding:17px 32px;font-size:16px}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.88);
+  backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:inline-flex;align-items:center;flex-shrink:0}
+.logo img{height:30px;width:auto;display:block}
+.nav-links{display:flex;gap:30px;font-size:15px;font-weight:600;color:var(--ink-2)}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{display:flex;gap:10px;align-items:center;flex-shrink:0}
+.nav-cta .btn{padding:11px 20px;font-size:14px}
+.ext{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap}
+.ext:hover{color:var(--blue)}
+.ext i{font-style:normal;opacity:.6;margin-left:2px}
+
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;
+  padding:clamp(60px,6.5vw,88px) 0 clamp(64px,7vw,92px)}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(var(--navy-line) 1px,transparent 1px),linear-gradient(90deg,var(--navy-line) 1px,transparent 1px);
+  background-size:38px 38px;
+  -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 20%,transparent 75%);
+  mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 20%,transparent 75%)}
+.hero-inner{position:relative;z-index:2;max-width:760px}
+.hero .eyebrow{color:var(--blue-l)}
+.hero h1{font-size:clamp(32px,4.2vw,52px);letter-spacing:-.04em;margin:18px 0 20px}
+.hero p{font-size:clamp(16px,1.2vw,18px);color:#C6D4E8;margin:0 0 32px;max-width:600px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+
+.svc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,72px);align-items:center}
+.svc + .svc{margin-top:clamp(64px,7vw,104px)}
+.svc.flip .svc-visual{order:-1}
+.svc-visual{border:1px solid var(--line);border-radius:16px;background:var(--bg);
+  display:grid;place-items:center;padding:clamp(36px,5vw,64px);min-height:320px}
+.svc-visual svg{width:min(230px,70%);height:auto;stroke:var(--blue);fill:none;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.mfp-visual{display:block;padding:clamp(28px,3.6vw,44px) clamp(20px,2.6vw,34px)}
+.mfp-carousel{position:relative;width:100%}
+.mfp-stage{position:relative;height:clamp(230px,29vw,310px);perspective:1200px;
+  transform-style:preserve-3d}
+.mfp-card{position:absolute;left:50%;top:0;height:100%;margin:0;display:flex;
+  flex-direction:column;align-items:center;justify-content:flex-start;gap:9px;
+  transform-origin:center center;transform:translate(-50%,0) scale(.5);opacity:0;
+  pointer-events:none;transition:transform .62s cubic-bezier(.4,0,.2,1),opacity .5s}
+.mfp-card picture{display:block;line-height:0;height:calc(100% - 26px)}
+.mfp-card img{height:100%;width:auto;display:block}
+.mfp-card figcaption{font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap}
+.mfp-card.pos-center{transform:translate(-50%,0) scale(1);opacity:1;z-index:3;pointer-events:auto}
+.mfp-card.pos-left{transform:translate(-120%,0) rotateY(36deg) scale(.72);opacity:.45;
+  z-index:2;pointer-events:auto;cursor:pointer}
+.mfp-card.pos-right{transform:translate(20%,0) rotateY(-36deg) scale(.72);opacity:.45;
+  z-index:2;pointer-events:auto;cursor:pointer}
+.mfp-card.pos-left:hover,.mfp-card.pos-right:hover{opacity:.7}
+.mfp-nav{position:absolute;top:calc(50% - 13px);transform:translateY(-50%);z-index:5;
+  width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;
+  color:var(--ink-2);font-size:20px;line-height:1;display:grid;place-items:center;
+  cursor:pointer;font-family:inherit;transition:border-color .18s,color .18s,background .18s}
+.mfp-nav:hover{border-color:var(--blue);color:var(--blue)}
+.mfp-nav.prev{left:0}
+.mfp-nav.next{right:0}
+.mfp-dots{display:flex;gap:7px;justify-content:center;margin-top:16px}
+.mfp-dots button{width:7px;height:7px;padding:0;border:none;border-radius:50%;
+  background:#C7D4E6;cursor:pointer;transition:.22s}
+.mfp-dots button.on{background:var(--blue);width:20px;border-radius:4px}
+.mfp-note{margin:12px 0 0;text-align:center;font-size:12.5px;color:var(--muted)}
+.svc-copy h2{font-size:clamp(25px,2.8vw,36px);margin:14px 0 18px}
+.svc-copy > p{font-size:16.5px;color:var(--muted);margin:0 0 26px}
+.feat{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+.feat li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+.feat svg{width:19px;height:19px;stroke:var(--blue);fill:none;stroke-width:2;
+  stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:3px}
+.feat b{font-weight:700;display:block;margin-bottom:2px}
+.feat span{color:var(--muted);font-size:14.5px}
+
+.mon{background:var(--navy);color:#fff}
+.mon .sec-head h2{color:#fff}
+.mon .sec-head p{color:#A8BDD9}
+.mon-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.mon-c{border:1px solid var(--navy-line);border-radius:14px;padding:26px;background:rgba(255,255,255,.04)}
+.mon-c svg{width:24px;height:24px;stroke:var(--blue-l);fill:none;stroke-width:1.7;
+  stroke-linecap:round;stroke-linejoin:round;margin-bottom:16px}
+.mon-c h3{font-size:17px;margin:0 0 8px;color:#fff}
+.mon-c p{margin:0;font-size:14px;color:#A8BDD9}
+
+/* ---------- 견적 문의 폼 ---------- */
+.lead{background:var(--bg)}
+.form-wrap{max-width:820px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:clamp(28px,4vw,48px)}
+.f-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:18px}
+.f{display:flex;flex-direction:column;gap:7px}
+.f label{font-size:13.5px;font-weight:700;color:var(--ink-2)}
+.f label .req{color:var(--blue);margin-left:2px}
+.f input,.f select,.f textarea{
+  padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:15px;font-family:inherit;
+  color:var(--ink);background:#fff;transition:border-color .16s,box-shadow .16s}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(59,130,246,.13)}
+.f textarea{resize:vertical;min-height:110px;line-height:1.6}
+.f-block{margin-bottom:22px}
+.f-block > label{display:block;font-size:13.5px;font-weight:700;color:var(--ink-2);margin-bottom:11px}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.check{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border:1px solid var(--line);border-radius:7px;
+  font-size:14px;cursor:pointer;background:#fff;transition:border-color .16s,background .16s,color .16s;user-select:none}
+.check:hover{border-color:#B6CDF0}
+.check input{width:15px;height:15px;accent-color:var(--blue);margin:0;cursor:pointer}
+.check:has(input:checked){border-color:var(--blue);background:var(--blue-bg);color:var(--blue-d);font-weight:600}
+.form-foot{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:30px}
+.form-foot .btn{width:100%;max-width:340px}
+.privacy{font-size:12.5px;color:var(--muted);text-align:center;margin:0}
+.form-done{display:none;text-align:center;padding:44px 20px}
+.form-done svg{width:52px;height:52px;stroke:var(--blue);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:20px}
+.form-done h3{font-size:24px;margin:0 0 12px}
+.form-done p{color:var(--muted);margin:0 0 20px;font-size:15.5px;text-align:left}
+.form-summary{text-align:left;background:var(--bg);border:1px solid var(--line);border-radius:10px;
+  padding:16px 18px;font-size:13px;color:var(--ink-2);line-height:1.8;white-space:pre-wrap;
+  max-height:220px;overflow:auto;margin:0 0 18px;font-family:inherit}
+.form-copy-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}
+.is-done .form-body{display:none}
+.is-done .form-done{display:block}
+.f label .opt,.f-block>label .opt{color:var(--muted);font-weight:400;font-size:12.5px;margin-left:4px}
+.f-divider{margin:28px 0 20px;padding-top:22px;border-top:1px dashed var(--line);
+  font-size:13px;font-weight:700;color:var(--muted)}
+
+/* ---------- AIRS 안내 밴드 ---------- */
+.xlink{background:var(--blue);color:#fff;padding:clamp(48px,5.5vw,72px) 0}
+.xlink-in{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.xlink h2{font-size:clamp(22px,2.4vw,30px);margin:0 0 10px}
+.xlink p{margin:0;color:#DCE9FE;font-size:16px;max-width:620px}
+.xlink .btn{background:#fff;color:var(--blue-d);flex-shrink:0}
+.xlink .btn:hover{background:#EFF5FF}
+
+footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
+.f-top{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;margin-bottom:40px}
+.f-brand img{height:28px;width:auto;display:block;margin-bottom:16px}
+.f-brand p{margin:0;font-size:13.5px;color:#7D93B5;max-width:340px;line-height:1.75}
+.f-links{display:flex;gap:56px;flex-wrap:wrap}
+.f-col h4{color:#fff;font-size:14px;margin:0 0 14px;font-weight:700}
+.f-col a,.f-col span{display:block;font-size:13.5px;color:#94A9C6;margin:9px 0}
+.f-col a:hover{color:var(--blue-l)}
+.f-bot{border-top:1px solid var(--navy-line);padding-top:24px;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;font-size:12.5px;color:#68809F}
+
+/* ---------- 방문자 카운터 ---------- */
+.visits{position:fixed;z-index:90;display:none;align-items:center;gap:7px;
+  top:calc(68px + 10px);right:max(14px,calc((100% - 1200px) / 2));
+  padding:5px 12px;border-radius:14px;line-height:1;
+  background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(8px);
+  border:1px solid var(--line);box-shadow:0 2px 10px rgba(14,32,57,.07);
+  font-size:11.5px;color:var(--muted);pointer-events:none;user-select:none}
+.visits.on{display:flex}
+.visits b{font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.visits i{font-style:normal;opacity:.4}
+@media(max-width:720px){
+  .visits{top:calc(68px + 7px);right:10px;padding:4px 9px;gap:5px;font-size:10.5px}
+}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:1060px){
+  .nav-links{display:none}
+  .mon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .container{width:calc(100% - 32px)}
+  .svc{grid-template-columns:1fr;gap:32px}
+  .svc.flip .svc-visual{order:0}
+  .svc-visual{min-height:250px}
+  .mon-grid{grid-template-columns:1fr}
+  .nav-cta .ext{display:none}
+  .hero-actions .btn{flex:1 1 100%}
+  .f-row{grid-template-columns:1fr}
+  .f-links{gap:36px}
+  .xlink .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="#top" aria-label="AVES 홈"><img src="aves-logo.svg" alt="AVES" width="211" height="55"></a>
+    <nav class="nav-links">
+      <a href="#rental">복합기 임대</a>
+      <a href="#design">외장 디자인</a>
+      <a href="#it">IT 서비스</a>
+      <a href="#monitoring">원격 모니터링</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="ext" href="https://airental.co.kr/" target="_blank" rel="noopener">기업 AI는 AIRS<i>↗</i></a>
+      <a class="btn btn-primary" href="#contact">견적 문의</a>
+    </div>
+  </div>
+</header>
+
+<div class="visits" id="visits" aria-live="off">
+  <span>오늘 <b id="visitToday">0</b></span><i>/</i><span>전체 <b id="visitTotal">0</b></span>
+</div>
+
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="eyebrow">OFFICE &amp; IT SERVICE</div>
+    <h1>업무가 멈추지 않는<br>사무 환경을 만듭니다.</h1>
+    <p>최신 복합기 임대부터 실시간 원격 모니터링, 네트워크·보안·헬프데스크까지. AVES는 기업의 사무 인프라와 IT 운영을 함께 책임집니다. 부산·울산·경남 지역은 직접 방문해 점검합니다.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary btn-lg" href="#contact">임대 견적 문의</a>
+      <a class="btn btn-ondark btn-lg" href="#monitoring">원격 모니터링 살펴보기</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="rental">
+  <div class="container">
+
+    <div class="svc rv">
+      <div class="svc-visual mfp-visual" id="design">
+        <div class="mfp-carousel">
+          <button class="mfp-nav prev" type="button" aria-label="이전 디자인">‹</button>
+          <div class="mfp-stage" id="mfpStage">
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-1.webp" type="image/webp">
+                <img src="mfp-1.png" alt="기본형 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>기본형</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-2.webp" type="image/webp">
+                <img src="mfp-2.png" alt="사이버펑크 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>사이버펑크</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-3.webp" type="image/webp">
+                <img src="mfp-3.png" alt="조선 · 중공업 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>조선 · 중공업</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-4.webp" type="image/webp">
+                <img src="mfp-4.png" alt="자동차 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>자동차</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-5.webp" type="image/webp">
+                <img src="mfp-5.png" alt="캐릭터 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>캐릭터</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-6.webp" type="image/webp">
+                <img src="mfp-6.png" alt="메카닉 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>메카닉</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-7.webp" type="image/webp">
+                <img src="mfp-7.png" alt="건축 · 설계 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>건축 · 설계</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-8.webp" type="image/webp">
+                <img src="mfp-8.png" alt="입시학원 · 교육 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>입시학원 · 교육</figcaption>
+            </figure>
+            <figure class="mfp-card">
+              <picture>
+                <source srcset="mfp-9.webp" type="image/webp">
+                <img src="mfp-9.png" alt="병원 · 의료 외장 A3 복합기" width="358" height="520"
+                     loading="lazy" decoding="async">
+              </picture>
+              <figcaption>병원 · 의료</figcaption>
+            </figure>
+          </div>
+          <button class="mfp-nav next" type="button" aria-label="다음 디자인">›</button>
+        </div>
+        <div class="mfp-dots" id="mfpDots"></div>
+        <p class="mfp-note">기기 외장 디자인 적용 예시</p>
+      </div>
+      <div class="svc-copy">
+        <div class="eyebrow">복합기 임대</div>
+        <h2>구매 부담 없이,<br>관리 부담도 없이.</h2>
+        <p>A3 컬러 복합기부터 소형 프린터까지 업무 환경에 맞는 기기를 합리적인 비용으로 제공합니다. 설치와 유지보수, 소모품 관리까지 AVES가 맡습니다.</p>
+        <ul class="feat">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>기기 선정부터 설치까지</b><span>사용량과 업무 특성을 분석해 과하지도 부족하지도 않은 기종을 제안합니다.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>소모품 자동 관리</b><span>토너와 부품 잔량을 원격으로 확인해 떨어지기 전에 배송합니다.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>다지점 통합 관리</b><span>여러 지점의 기기 현황과 출력량을 한 화면에서 관리합니다.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>투명한 비용 구조</b><span>계약 조건에 따른 사용량과 청구 내역을 그대로 확인할 수 있습니다.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="svc flip rv" id="it">
+      <div class="svc-visual">
+        <svg viewBox="0 0 64 64" aria-label="IT 서비스">
+          <rect x="6" y="10" width="52" height="30" rx="2.5"/>
+          <path d="M6 34 H58"/>
+          <circle cx="11" cy="15" r="1.3"/>
+          <circle cx="15" cy="15" r="1.3"/>
+          <path d="M14 26 l5-5 5 5"/>
+          <path d="M28 21 h18"/>
+          <path d="M28 27 h12"/>
+          <path d="M22 46 h20"/>
+          <path d="M32 40 v6"/>
+          <path d="M14 54 h36"/>
+          <path d="M22 46 v8"/>
+          <path d="M42 46 v8"/>
+          <circle cx="32" cy="50" r="1.4"/>
+        </svg>
+      </div>
+      <div class="svc-copy">
+        <div class="eyebrow">IT 서비스</div>
+        <h2>IT 담당자 한 명의 몫을,<br>전문 엔지니어 팀이.</h2>
+        <p>네트워크와 보안, 헬프데스크부터 인프라 구축·운영까지 기업 IT 전반을 지원합니다. 문제가 생긴 뒤 고치는 것이 아니라 생기지 않도록 관리합니다.</p>
+        <ul class="feat">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>네트워크 구축 · 운영</b><span>사무실 이전, 증설, 회선 재구성까지 중단 없이 진행합니다.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>보안 관리</b><span>방화벽, 백신, 접근 권한을 기업 규모에 맞게 설계하고 운영합니다.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>헬프데스크</b><span>직원들의 PC·주변기기 문제를 원격과 방문으로 신속하게 처리합니다.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><b>AI 도입 기반 정비</b><span>기업 AI 구축에 필요한 데이터·인프라 환경을 미리 갖춥니다.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section mon" id="monitoring">
+  <div class="container">
+    <div class="sec-head center rv">
+      <div class="eyebrow" style="color:var(--blue-l)">REMOTE MONITORING</div>
+      <h2>문제가 생기기 전에 알려드립니다.</h2>
+      <p>AVES의 복합기는 원격 모니터링 시스템과 함께 운영됩니다. 기기 상태와 소모품 잔량, 출력량을 실시간으로 수집해 장애와 소모품 부족을 사전에 관리합니다.</p>
+    </div>
+    <div class="mon-grid rv">
+      <div class="mon-c">
+        <svg viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+        <h3>실시간 상태 수집</h3>
+        <p>기기 상태와 오류를 실시간으로 감지해 담당자가 요청하기 전에 대응합니다.</p>
+      </div>
+      <div class="mon-c">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14v11a2 2 0 01-2 2H7a2 2 0 01-2-2z"/><path d="M8 8V6a4 4 0 018 0v2"/><path d="M9 14h6"/></svg>
+        <h3>소모품 사전 배송</h3>
+        <p>토너 잔량을 추적해 소진되기 전에 배송합니다. 업무가 멈추지 않습니다.</p>
+      </div>
+      <div class="mon-c">
+        <svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        <h3>출력량 분석</h3>
+        <p>지점별·기기별 출력량을 집계해 비용 구조와 배치 효율을 점검합니다.</p>
+      </div>
+      <div class="mon-c">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/><path d="M7 9h6M7 13h10"/></svg>
+        <h3>지점 통합 대시보드</h3>
+        <p>전 지점 현황과 서비스 이력을 한 화면에서 확인하고 관리합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section lead" id="contact">
+  <div class="container">
+    <div class="sec-head center rv">
+      <div class="eyebrow">견적 문의</div>
+      <h2>복합기 임대와 IT 운영,<br>한 번에 상담하세요.</h2>
+      <p>현재 사용 중인 기기 현황과 업무 환경을 알려주시면 적합한 구성과 비용을 정리해 안내드립니다.</p>
+    </div>
+
+    <div class="form-wrap rv" id="formWrap">
+      <form class="form-body" id="leadForm" novalidate>
+        <div class="f-row">
+          <div class="f">
+            <label for="company">회사명<span class="req">*</span></label>
+            <input type="text" id="company" name="company" required autocomplete="organization">
+          </div>
+          <div class="f">
+            <label for="name">담당자명<span class="req">*</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="f">
+            <label for="phone">연락처<span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="010-0000-0000">
+          </div>
+          <div class="f">
+            <label for="email">이메일<span class="opt">(선택)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email">
+          </div>
+        </div>
+
+        <div class="f-block">
+          <label>필요한 서비스<span class="req">*</span></label>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="services" value="복합기 임대">복합기 임대</label>
+            <label class="check"><input type="checkbox" name="services" value="프린터 임대">프린터 임대</label>
+            <label class="check"><input type="checkbox" name="services" value="원격 모니터링">원격 모니터링</label>
+            <label class="check"><input type="checkbox" name="services" value="네트워크 구축 · 운영">네트워크 구축 · 운영</label>
+            <label class="check"><input type="checkbox" name="services" value="보안 관리">보안 관리</label>
+            <label class="check"><input type="checkbox" name="services" value="헬프데스크">헬프데스크</label>
+            <label class="check"><input type="checkbox" name="services" value="기타">기타</label>
+          </div>
+        </div>
+
+        <div class="f">
+          <label for="message">문의 내용<span class="req">*</span></label>
+          <textarea id="message" name="message" required placeholder="예: 사무실 2곳에 A3 컬러 복합기를 놓으려고 합니다. 월 출력량은 대략 3,000장 정도입니다."></textarea>
+        </div>
+
+        <p class="f-divider">아래는 알려주시면 더 정확하게 견적을 낼 수 있는 선택 항목입니다</p>
+
+        <div class="f-row">
+          <div class="f">
+            <label for="qty">필요한 대수<span class="opt">(선택)</span></label>
+            <input type="text" id="qty" name="qty" placeholder="예: A3 컬러 2대, 흑백 1대">
+          </div>
+          <div class="f">
+            <label for="region">설치 희망 지역<span class="opt">(선택)</span></label>
+            <select id="region" name="region">
+              <option value="">선택해 주세요</option>
+              <option>부산</option>
+              <option>울산</option>
+              <option>경남</option>
+              <option>그 외 지역</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="f">
+            <label for="current">현재 사용 중인 기종<span class="opt">(선택)</span></label>
+            <input type="text" id="current" name="current" placeholder="예: 후지필름 Apeos C3570">
+          </div>
+          <div class="f">
+            <label for="volume">월 예상 출력량<span class="opt">(선택)</span></label>
+            <select id="volume" name="volume">
+              <option value="">선택해 주세요</option>
+              <option>1,000장 미만</option>
+              <option>1,000 ~ 3,000장</option>
+              <option>3,000 ~ 10,000장</option>
+              <option>10,000장 이상</option>
+              <option>잘 모르겠습니다</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="f">
+            <label for="branches">지점 수<span class="opt">(선택)</span></label>
+            <select id="branches" name="branches">
+              <option value="">선택해 주세요</option>
+              <option>1곳</option>
+              <option>2 ~ 5곳</option>
+              <option>6 ~ 20곳</option>
+              <option>20곳 이상</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-foot">
+          <button type="submit" class="btn btn-primary btn-lg">견적 문의 보내기</button>
+          <p class="privacy">자동 접수 시스템은 아직 연결되어 있지 않습니다. 제출하시면 작성하신 내용이 담긴 이메일 작성 화면이 열립니다. 입력하신 정보는 견적 산출 및 상담 목적으로만 사용됩니다.</p>
+        </div>
+      </form>
+
+      <div class="form-done" id="formDone" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+        <h3>메일 작성 화면이 열립니다</h3>
+        <p>아직 자동 접수 시스템이 연결되어 있지 않아, 입력하신 내용은 이메일로 전달됩니다. 열린 메일 프로그램에서 내용을 확인하시고 보내기를 눌러주셔야 문의가 완료됩니다.<br><br>메일 프로그램이 열리지 않았다면, 아래 내용을 복사해 <a href="mailto:contact@avesbiz.co.kr" style="color:var(--blue);font-weight:600">contact@avesbiz.co.kr</a> 로 직접 보내주세요.</p>
+        <pre class="form-summary" id="formSummary"></pre>
+        <div class="form-copy-row">
+          <button type="button" class="btn btn-ghost" id="formCopy">내용 복사하기</button>
+          <a class="btn btn-ghost" id="formMailFallback" href="mailto:contact@avesbiz.co.kr">메일 다시 열기</a>
+        </div>
+        <button type="button" class="btn btn-ghost" id="formReset">다시 작성하기</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="xlink">
+  <div class="container xlink-in">
+    <div>
+      <h2>기업 AI 도입도 고민하고 계신가요?</h2>
+      <p>흩어진 기업 데이터를 연결해 우리 회사를 이해하는 AI를 만드는 일은 AIRS에서 맡고 있습니다. 사무 인프라와 AI를 함께 상담하실 수 있습니다.</p>
+    </div>
+    <a class="btn btn-lg" href="https://airental.co.kr/" target="_blank" rel="noopener">AIRS 기업 AI 살펴보기 ↗</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <img src="aves-logo-white.svg" alt="AVES" width="211" height="55">
+        <p>AVES는 복합기·프린터 임대와 원격 모니터링, 기업 IT 운영을 지원합니다. 부산에 기반을 두고 부산·울산·경남 지역 기업과 함께합니다.</p>
+      </div>
+      <div class="f-links">
+        <div class="f-col">
+          <h4>서비스</h4>
+          <a href="#rental">복합기 임대</a>
+          <a href="#design">외장 디자인</a>
+          <a href="#it">IT 서비스</a>
+          <a href="#monitoring">원격 모니터링</a>
+        </div>
+        <div class="f-col">
+          <h4>기업 AI</h4>
+          <a href="https://airental.co.kr/" target="_blank" rel="noopener">AIRS 홈 ↗</a>
+          <a href="https://airental.co.kr/#solution" target="_blank" rel="noopener">AI Data Layer ↗</a>
+          <a href="https://airental.co.kr/#agent" target="_blank" rel="noopener">AI Agent ↗</a>
+        </div>
+        <div class="f-col">
+          <h4>문의</h4>
+          <a href="mailto:contact@avesbiz.co.kr">contact@avesbiz.co.kr</a>
+          <a href="#contact">견적 문의</a>
+          <span>부산광역시</span>
+          <span>평일 09:00 ~ 18:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© 2026 AVES. All rights reserved.</span>
+      <span>업무가 멈추지 않는 사무 환경을 만듭니다.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var items = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* 복합기 외장 디자인 캐러셀 */
+  var stage = document.getElementById('mfpStage');
+  if (!stage) return;
+  var cards = [].slice.call(stage.querySelectorAll('.mfp-card'));
+  var dotsWrap = document.getElementById('mfpDots');
+  var prev = document.querySelector('.mfp-nav.prev');
+  var next = document.querySelector('.mfp-nav.next');
+  var total = cards.length;
+  var current = 0;
+  var timer = null;
+
+  var dots = cards.map(function(_, i){
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', (i + 1) + '번째 디자인');
+    b.addEventListener('click', function(){ go(i); restart(); });
+    dotsWrap.appendChild(b);
+    return b;
+  });
+
+  function rel(i){
+    var d = i - current;
+    if (d > total / 2) d -= total;
+    if (d < -total / 2) d += total;
+    return d;
+  }
+
+  function apply(){
+    cards.forEach(function(c, i){
+      c.classList.remove('pos-left', 'pos-center', 'pos-right');
+      var d = rel(i);
+      if (d === 0) c.classList.add('pos-center');
+      else if (d === -1) c.classList.add('pos-left');
+      else if (d === 1) c.classList.add('pos-right');
+    });
+    dots.forEach(function(b, i){ b.classList.toggle('on', i === current); });
+  }
+
+  function go(i){ current = (i + total) % total; apply(); }
+  function start(){ timer = setInterval(function(){ go(current + 1); }, 4000); }
+  function stop(){ clearInterval(timer); }
+  function restart(){ stop(); start(); }
+
+  prev.addEventListener('click', function(){ go(current - 1); restart(); });
+  next.addEventListener('click', function(){ go(current + 1); restart(); });
+  cards.forEach(function(c, i){
+    c.addEventListener('click', function(){
+      if (!c.classList.contains('pos-center')) { go(i); restart(); }
+    });
+  });
+  stage.addEventListener('mouseenter', stop);
+  stage.addEventListener('mouseleave', start);
+
+  var sx = 0;
+  stage.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, { passive: true });
+  stage.addEventListener('touchend', function(e){
+    var dx = e.changedTouches[0].clientX - sx;
+    if (Math.abs(dx) > 45) { go(dx < 0 ? current + 1 : current - 1); restart(); }
+  });
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { apply(); }
+  else { apply(); start(); }
+})();
+
+/* ---------- 견적 문의 폼 ----------
+   이 사이트는 백엔드 서버가 없는 정적 페이지입니다. 자동 접수 시스템이
+   구축되기 전까지, 제출한 내용은 이메일(mailto)로 전달하는 방식으로
+   동작합니다 — 성공 메시지를 거짓으로 보여주지 않기 위한 조치입니다.
+   나중에 실제 접수 API가 생기면 아래 submit 핸들러 안에서 fetch로
+   전송하고, formDone의 안내 문구를 "접수되었습니다"로 교체하면 됩니다. */
+(function(){
+  var form = document.getElementById('leadForm');
+  var wrap = document.getElementById('formWrap');
+  var reset = document.getElementById('formReset');
+  var summaryEl = document.getElementById('formSummary');
+  var copyBtn = document.getElementById('formCopy');
+  var mailFallback = document.getElementById('formMailFallback');
+  var CONTACT_EMAIL = 'contact@avesbiz.co.kr';
+
+  if (!form) return;
+
+  var FIELD_LABELS = {
+    company: '회사명', name: '담당자명', phone: '연락처', email: '이메일',
+    services: '필요한 서비스', message: '문의 내용', qty: '필요한 대수',
+    region: '설치 희망 지역', current: '현재 사용 중인 기종',
+    volume: '월 예상 출력량', branches: '지점 수'
+  };
+  var FIELD_ORDER = ['company', 'name', 'phone', 'email', 'services', 'message',
+    'qty', 'region', 'current', 'volume', 'branches'];
+
+  function collect(){
+    var fd = new FormData(form), out = {};
+    fd.forEach(function(v, k){
+      if (out[k] === undefined) out[k] = v;
+      else if (Array.isArray(out[k])) out[k].push(v);
+      else out[k] = [out[k], v];
+    });
+    return out;
+  }
+
+  function buildSummary(payload){
+    var lines = ['[복합기 임대 · IT 서비스 견적 문의]', ''];
+    FIELD_ORDER.forEach(function(key){
+      var v = payload[key];
+      if (!v || (Array.isArray(v) && v.length === 0)) return;
+      if (Array.isArray(v)) v = v.join(', ');
+      lines.push(FIELD_LABELS[key] + ': ' + v);
+    });
+    return lines.join('\n');
+  }
+
+  function buildMailto(payload, summary){
+    var subject = '견적 문의 - ' + (payload.company || '회사명 미입력');
+    return 'mailto:' + CONTACT_EMAIL
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(summary);
+  }
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if (!form.reportValidity()) return;
+
+    /* 체크박스 그룹은 required 를 쓸 수 없어 직접 확인한다 */
+    var picked = form.querySelectorAll('input[name="services"]:checked');
+    if (picked.length === 0) {
+      alert('필요한 서비스를 하나 이상 선택해 주세요.');
+      return;
+    }
+
+    var payload = collect();
+    var summary = buildSummary(payload);
+    var mailtoUrl = buildMailto(payload, summary);
+
+    if (summaryEl) summaryEl.textContent = summary;
+    if (mailFallback) mailFallback.href = mailtoUrl;
+
+    wrap.classList.add('is-done');
+    wrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    window.location.href = mailtoUrl;
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function(){
+      var text = summaryEl ? summaryEl.textContent : '';
+      function flash(){
+        var original = copyBtn.textContent;
+        copyBtn.textContent = '복사됨';
+        setTimeout(function(){ copyBtn.textContent = original; }, 1500);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(flash).catch(function(){
+          alert('복사에 실패했습니다. 내용을 직접 선택해 복사해 주세요.');
+        });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try { document.execCommand('copy'); flash(); }
+        catch (e) { alert('복사에 실패했습니다. 내용을 직접 선택해 복사해 주세요.'); }
+        document.body.removeChild(ta);
+      }
+    });
+  }
+
+  if (reset) {
+    reset.addEventListener('click', function(){
+      form.reset();
+      wrap.classList.remove('is-done');
+      wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+})();
+
+/* ---------- 방문자 카운터 ----------
+   정적 페이지라 방문 수는 서버에 기록해야 한다. 아래 VISIT_API 에 주소를
+   넣으면 카운터가 켜진다. 비워 두면 아무것도 표시하지 않는다
+   (실제 수치가 없는데 숫자를 보여주지 않기 위함).
+
+   엔드포인트 규칙: GET 한 번에 방문을 1 증가시키고 아래 형태로 응답한다.
+     { "today": 12, "total": 3456 }
+   CORS 로 이 도메인에서의 요청을 허용해야 한다.                            */
+(function(){
+  var VISIT_API = '';
+
+  if (!VISIT_API) return;
+  var box = document.getElementById('visits');
+  var elToday = document.getElementById('visitToday');
+  var elTotal = document.getElementById('visitTotal');
+  if (!box || !elToday || !elTotal) return;
+
+  fetch(VISIT_API, { credentials: 'omit' })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function(d){
+      if (typeof d.today !== 'number' || typeof d.total !== 'number') return;
+      elToday.textContent = d.today.toLocaleString('ko-KR');
+      elTotal.textContent = d.total.toLocaleString('ko-KR');
+      box.classList.add('on');
+    })
+    .catch(function(){ /* 실패하면 조용히 숨긴 채로 둔다 */ });
+})();
+</script>
+</body>
+</html>
