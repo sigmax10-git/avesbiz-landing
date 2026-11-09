@@ -21,24 +21,26 @@ AI 플랫폼(AIRS, airental.co.kr)은 별도 저장소 `airental-landing`에 있
 
 ## GitHub Pages 배포
 
-아직 원격 저장소가 없다. 다음 순서로 올린다.
+배포 완료. `main` 에 푸시하면 1~2분 뒤 반영된다.
 
-1. github.com에서 새 저장소 `avesbiz-landing`을 만든다 (Public).
-2. 이 폴더에서:
+- 저장소: https://github.com/sigmax10-git/avesbiz-landing
+- 미리보기: https://sigmax10-git.github.io/avesbiz-landing/
 
-   ```bash
-   cd C:/AvesbizPage
-   git init
-   git add .
-   git commit -m "AVES 랜딩페이지 초기 커밋"
-   git branch -M main
-   git remote add origin https://github.com/sigmax10-git/avesbiz-landing.git
-   git push -u origin main
-   ```
+## 교차 링크 (도메인 연결 전까지)
 
-3. 저장소 **Settings → Pages → Source**를 `Deploy from a branch`,
-   브랜치 `main` / 폴더 `/ (root)`로 지정한다.
-4. 몇 분 뒤 `https://sigmax10-git.github.io/avesbiz-landing/` 에서 확인한다.
+두 사이트는 서로 바깥 링크로 연결된다. 그런데 가비아 DNS 를 아직 붙이지
+않았으므로, 지금 `airental.co.kr` / `avesbiz.co.kr` 로 링크를 걸면 방문자가
+오류 페이지로 떨어진다. 그래서 **클릭되는 링크는 github.io 미리보기 주소**로
+두었고, `canonical` / `og:url` / JSON-LD 는 최종 도메인을 유지한다.
+
+전환은 `C:\RandingPage\.swap-crosslinks.py` 로 한다 (두 저장소를 같이 고친다).
+
+```bash
+python C:/RandingPage/.swap-crosslinks.py domain    # 도메인 연결 후
+python C:/RandingPage/.swap-crosslinks.py preview    # 되돌리기
+```
+
+바뀐 뒤 양쪽 저장소를 각각 커밋·푸시해야 반영된다.
 
 ## 도메인 연결 (avesbiz.co.kr)
 
@@ -60,9 +62,10 @@ AI 플랫폼(AIRS, airental.co.kr)은 별도 저장소 `airental-landing`에 있
    Custom domain**에 `avesbiz.co.kr`을 입력하고 저장한다.
    저장하면 저장소에 `CNAME` 파일이 자동으로 생긴다.
 3. **Enforce HTTPS**를 켠다. 인증서 발급에 시간이 조금 걸린다.
-4. 연결이 끝나면 `airental-landing` 저장소의 `rental.html` 안
-   `AUTO_REDIRECT`를 `true`로 바꾼다. 그래야 옛 주소로 들어온 방문자가
-   자동으로 이 사이트로 넘어간다.
+4. 연결이 끝나면 `.swap-crosslinks.py domain` 을 돌려 교차 링크를 실제
+   도메인으로 바꾸고, 두 저장소를 커밋·푸시한다.
+5. `airental-landing` 저장소의 `rental.html` 안 `AUTO_REDIRECT`를 `true`로
+   바꾼다. 그래야 옛 주소로 들어온 방문자가 자동으로 이 사이트로 넘어간다.
 
 ## 아직 연결 안 된 것
 
