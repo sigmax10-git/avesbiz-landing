@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://avesbiz.co.kr/">
 <meta property="og:title" content="복합기 임대 · IT 서비스 | AVES">
 <meta property="og:description" content="최신 복합기 임대부터 실시간 원격 모니터링, 기업 IT 운영까지. 업무가 멈추지 않는 사무 환경을 만듭니다.">
-<meta property="og:image" content="https://avesbiz.co.kr/mfp-1.png">
+<meta property="og:image" content="https://avesbiz.co.kr/office-band.jpg">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -121,35 +121,28 @@ h1,h2,h3,h4{margin:0;letter-spacing:-.03em;font-weight:800;line-height:1.18}
   display:grid;place-items:center;padding:clamp(36px,5vw,64px);min-height:320px}
 .svc-visual svg{width:min(230px,70%);height:auto;stroke:var(--blue);fill:none;
   stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.mfp-visual{display:block;padding:clamp(28px,3.6vw,44px) clamp(20px,2.6vw,34px)}
-.mfp-carousel{position:relative;width:100%}
-.mfp-stage{position:relative;height:clamp(230px,29vw,310px);perspective:1200px;
-  transform-style:preserve-3d}
-.mfp-card{position:absolute;left:50%;top:0;height:100%;margin:0;display:flex;
-  flex-direction:column;align-items:center;justify-content:flex-start;gap:9px;
-  transform-origin:center center;transform:translate(-50%,0) scale(.5);opacity:0;
-  pointer-events:none;transition:transform .62s cubic-bezier(.4,0,.2,1),opacity .5s}
-.mfp-card picture{display:block;line-height:0;height:calc(100% - 26px)}
-.mfp-card img{height:100%;width:auto;display:block}
-.mfp-card figcaption{font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap}
-.mfp-card.pos-center{transform:translate(-50%,0) scale(1);opacity:1;z-index:3;pointer-events:auto}
-.mfp-card.pos-left{transform:translate(-120%,0) rotateY(36deg) scale(.72);opacity:.45;
-  z-index:2;pointer-events:auto;cursor:pointer}
-.mfp-card.pos-right{transform:translate(20%,0) rotateY(-36deg) scale(.72);opacity:.45;
-  z-index:2;pointer-events:auto;cursor:pointer}
-.mfp-card.pos-left:hover,.mfp-card.pos-right:hover{opacity:.7}
-.mfp-nav{position:absolute;top:calc(50% - 13px);transform:translateY(-50%);z-index:5;
-  width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;
-  color:var(--ink-2);font-size:20px;line-height:1;display:grid;place-items:center;
-  cursor:pointer;font-family:inherit;transition:border-color .18s,color .18s,background .18s}
-.mfp-nav:hover{border-color:var(--blue);color:var(--blue)}
-.mfp-nav.prev{left:0}
-.mfp-nav.next{right:0}
-.mfp-dots{display:flex;gap:7px;justify-content:center;margin-top:16px}
-.mfp-dots button{width:7px;height:7px;padding:0;border:none;border-radius:50%;
-  background:#C7D4E6;cursor:pointer;transition:.22s}
-.mfp-dots button.on{background:var(--blue);width:20px;border-radius:4px}
-.mfp-note{margin:12px 0 0;text-align:center;font-size:12.5px;color:var(--muted)}
+/* ---------- 도입 목적 ---------- */
+.needs{background:var(--bg)}
+.need-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.need-c{border:1px solid var(--line);border-radius:14px;padding:26px 24px 28px;background:#fff}
+.need-n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:8px;
+  background:var(--blue-bg);color:var(--blue-d);font-size:14px;font-weight:800;margin-bottom:15px}
+.need-c h3{font-size:17px;margin:0 0 9px;letter-spacing:-.02em}
+.need-c p{margin:0;font-size:14.5px;color:var(--muted)}
+.need-hl{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) auto;
+  gap:clamp(20px,3vw,40px);align-items:center;margin-top:18px;
+  border:1px solid rgba(59,130,246,.38);border-radius:14px;background:var(--blue-bg);
+  padding:28px clamp(24px,3vw,34px)}
+.need-hl .need-n{background:var(--blue);color:#fff}
+.need-hl h3{font-size:19px;margin:0 0 9px;letter-spacing:-.02em}
+.need-hl p{margin:0;font-size:14.5px;color:var(--ink-2);max-width:760px}
+.need-hl .btn{white-space:nowrap}
+@media(max-width:980px){
+  .need-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .need-hl{grid-template-columns:1fr}
+  .need-hl .btn{justify-self:start}
+}
+@media(max-width:560px){ .need-grid{grid-template-columns:1fr} }
 .svc-copy h2{font-size:clamp(25px,2.8vw,36px);margin:14px 0 18px}
 .svc-copy > p{font-size:16.5px;color:var(--muted);margin:0 0 26px}
 .feat{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
@@ -184,6 +177,7 @@ h1,h2,h3,h4{margin:0;letter-spacing:-.03em;font-weight:800;line-height:1.18}
 .f textarea{resize:vertical;min-height:110px;line-height:1.6}
 .f-block{margin-bottom:22px}
 .f-block > label{display:block;font-size:13.5px;font-weight:700;color:var(--ink-2);margin-bottom:11px}
+.f-note{margin:-5px 0 11px;font-size:13px;color:var(--muted)}
 .checks{display:flex;flex-wrap:wrap;gap:8px}
 .check{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border:1px solid var(--line);border-radius:7px;
   font-size:14px;cursor:pointer;background:#fff;transition:border-color .16s,background .16s,color .16s;user-select:none}
@@ -271,8 +265,8 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
   <div class="container nav-inner">
     <a class="logo" href="#top" aria-label="AVES 홈"><img src="aves-logo.png" alt="AVES Business Solution" width="894" height="150"></a>
     <nav class="nav-links">
+      <a href="#needs">도입 목적</a>
       <a href="#rental">복합기 임대</a>
-      <a href="#design">외장 디자인</a>
       <a href="#it">IT 서비스</a>
       <a href="#monitoring">원격 모니터링</a>
     </nav>
@@ -311,91 +305,64 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
   </div>
 </section>
 
+<section class="section needs" id="needs">
+  <div class="container">
+    <div class="sec-head center rv">
+      <div class="eyebrow">도입 목적</div>
+      <h2>무엇을 바꾸고 싶으신가요?</h2>
+      <p>복합기를 새로 들이는 이유는 회사마다 다릅니다. 아래 다섯 가지 중 해당하는 것을 알려주시면, 목적에 맞춰 기기 구성과 계약 조건을 다르게 제안합니다.</p>
+    </div>
+
+    <div class="need-grid rv">
+      <div class="need-c">
+        <span class="need-n">1</span>
+        <h3>단순 비용 절감 필요</h3>
+        <p>출력에 매달 얼마가 나가는지, 어디서 새는지 모르고 쓰는 경우가 많습니다. 기기별 사용량과 계약 조건을 실측해 과한 기기와 불필요한 비용을 걷어냅니다.</p>
+      </div>
+      <div class="need-c">
+        <span class="need-n">2</span>
+        <h3>스캔 업무 자동화 필요</h3>
+        <p>스캔한 파일을 PC로 옮기고 이름을 바꿔 폴더에 넣는 일을 사람이 반복합니다. 복합기에서 지정한 폴더·메일·클라우드로 바로 보내고 파일명 규칙을 적용합니다.</p>
+      </div>
+      <div class="need-c">
+        <span class="need-n">3</span>
+        <h3>특수 출력 업무 개선 필요</h3>
+        <p>도면, 라벨, 전표, 봉투처럼 일반 문서와 성격이 다른 출력이 섞여 있습니다. 해당 작업에 맞는 기기와 용지, 설정을 따로 잡아 범용 기기로 버티지 않게 합니다.</p>
+      </div>
+      <div class="need-c">
+        <span class="need-n">4</span>
+        <h3>개인정보 통제 개선 필요</h3>
+        <p>출력물이 트레이에 방치되고, 누가 무엇을 출력하고 스캔했는지 남지 않습니다. 본인 인증 후 출력, 사용 이력 기록, 권한 분리로 통제 지점을 만듭니다.</p>
+      </div>
+
+      <div class="need-hl">
+        <div>
+          <span class="need-n">5</span>
+          <h3>복합기 + AI = 업무 자동화 필요</h3>
+          <p>스캔으로 끝내지 않고, 그 문서를 AI가 읽어 데이터로 만드는 단계입니다. 손으로 쓴 기록지나 전표를 기존 업무 시스템에 자동으로 넣는 일까지 이어집니다. 이 영역은 기업 AI를 맡고 있는 AIRS와 함께 진행합니다.</p>
+        </div>
+        <a class="btn btn-primary" href="#contact">이 목적으로 상담하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="rental">
   <div class="container">
 
     <div class="svc rv">
-      <div class="svc-visual mfp-visual" id="design">
-        <div class="mfp-carousel">
-          <button class="mfp-nav prev" type="button" aria-label="이전 디자인">‹</button>
-          <div class="mfp-stage" id="mfpStage">
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-1.webp" type="image/webp">
-                <img src="mfp-1.png" alt="기본형 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>기본형</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-2.webp" type="image/webp">
-                <img src="mfp-2.png" alt="사이버펑크 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>사이버펑크</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-3.webp" type="image/webp">
-                <img src="mfp-3.png" alt="조선 · 중공업 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>조선 · 중공업</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-4.webp" type="image/webp">
-                <img src="mfp-4.png" alt="자동차 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>자동차</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-5.webp" type="image/webp">
-                <img src="mfp-5.png" alt="캐릭터 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>캐릭터</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-6.webp" type="image/webp">
-                <img src="mfp-6.png" alt="메카닉 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>메카닉</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-7.webp" type="image/webp">
-                <img src="mfp-7.png" alt="건축 · 설계 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>건축 · 설계</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-8.webp" type="image/webp">
-                <img src="mfp-8.png" alt="입시학원 · 교육 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>입시학원 · 교육</figcaption>
-            </figure>
-            <figure class="mfp-card">
-              <picture>
-                <source srcset="mfp-9.webp" type="image/webp">
-                <img src="mfp-9.png" alt="병원 · 의료 외장 A3 복합기" width="358" height="520"
-                     loading="lazy" decoding="async">
-              </picture>
-              <figcaption>병원 · 의료</figcaption>
-            </figure>
-          </div>
-          <button class="mfp-nav next" type="button" aria-label="다음 디자인">›</button>
-        </div>
-        <div class="mfp-dots" id="mfpDots"></div>
-        <p class="mfp-note">기기 외장 디자인 적용 예시</p>
+      <div class="svc-visual">
+        <svg viewBox="0 0 64 64" aria-label="복합기">
+          <rect x="16" y="6" width="32" height="12" rx="1.5"/>
+          <path d="M22 11h14"/>
+          <rect x="8" y="22" width="48" height="20" rx="2.5"/>
+          <rect x="34" y="27" width="16" height="10" rx="1.5"/>
+          <path d="M37 31h10M37 34h6"/>
+          <circle cx="15" cy="27" r="1.4"/>
+          <path d="M14 46h36v12H14z"/>
+          <path d="M20 51h8M20 55h8"/>
+          <path d="M8 32h6"/>
+        </svg>
       </div>
       <div class="svc-copy">
         <div class="eyebrow">복합기 임대</div>
@@ -532,6 +499,18 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
         </div>
 
         <div class="f-block">
+          <label>도입 목적<span class="req">*</span></label>
+          <p class="f-note">해당하는 것을 모두 골라주세요. 목적에 따라 제안하는 기기와 계약 조건이 달라집니다.</p>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="purpose" value="단순 비용 절감">1. 단순 비용 절감</label>
+            <label class="check"><input type="checkbox" name="purpose" value="스캔 업무 자동화">2. 스캔 업무 자동화</label>
+            <label class="check"><input type="checkbox" name="purpose" value="특수 출력 업무 개선">3. 특수 출력 업무 개선</label>
+            <label class="check"><input type="checkbox" name="purpose" value="개인정보 통제 개선">4. 개인정보 통제 개선</label>
+            <label class="check"><input type="checkbox" name="purpose" value="복합기 + AI 업무 자동화">5. 복합기 + AI 업무 자동화</label>
+          </div>
+        </div>
+
+        <div class="f-block">
           <label>필요한 서비스<span class="req">*</span></label>
           <div class="checks">
             <label class="check"><input type="checkbox" name="services" value="복합기 임대">복합기 임대</label>
@@ -638,8 +617,8 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
       <div class="f-links">
         <div class="f-col">
           <h4>서비스</h4>
+          <a href="#needs">도입 목적</a>
           <a href="#rental">복합기 임대</a>
-          <a href="#design">외장 디자인</a>
           <a href="#it">IT 서비스</a>
           <a href="#monitoring">원격 모니터링</a>
         </div>
@@ -679,68 +658,6 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
     items.forEach(function(el){ el.classList.add('in'); });
   }
 
-  /* 복합기 외장 디자인 캐러셀 */
-  var stage = document.getElementById('mfpStage');
-  if (!stage) return;
-  var cards = [].slice.call(stage.querySelectorAll('.mfp-card'));
-  var dotsWrap = document.getElementById('mfpDots');
-  var prev = document.querySelector('.mfp-nav.prev');
-  var next = document.querySelector('.mfp-nav.next');
-  var total = cards.length;
-  var current = 0;
-  var timer = null;
-
-  var dots = cards.map(function(_, i){
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.setAttribute('aria-label', (i + 1) + '번째 디자인');
-    b.addEventListener('click', function(){ go(i); restart(); });
-    dotsWrap.appendChild(b);
-    return b;
-  });
-
-  function rel(i){
-    var d = i - current;
-    if (d > total / 2) d -= total;
-    if (d < -total / 2) d += total;
-    return d;
-  }
-
-  function apply(){
-    cards.forEach(function(c, i){
-      c.classList.remove('pos-left', 'pos-center', 'pos-right');
-      var d = rel(i);
-      if (d === 0) c.classList.add('pos-center');
-      else if (d === -1) c.classList.add('pos-left');
-      else if (d === 1) c.classList.add('pos-right');
-    });
-    dots.forEach(function(b, i){ b.classList.toggle('on', i === current); });
-  }
-
-  function go(i){ current = (i + total) % total; apply(); }
-  function start(){ timer = setInterval(function(){ go(current + 1); }, 4000); }
-  function stop(){ clearInterval(timer); }
-  function restart(){ stop(); start(); }
-
-  prev.addEventListener('click', function(){ go(current - 1); restart(); });
-  next.addEventListener('click', function(){ go(current + 1); restart(); });
-  cards.forEach(function(c, i){
-    c.addEventListener('click', function(){
-      if (!c.classList.contains('pos-center')) { go(i); restart(); }
-    });
-  });
-  stage.addEventListener('mouseenter', stop);
-  stage.addEventListener('mouseleave', start);
-
-  var sx = 0;
-  stage.addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; }, { passive: true });
-  stage.addEventListener('touchend', function(e){
-    var dx = e.changedTouches[0].clientX - sx;
-    if (Math.abs(dx) > 45) { go(dx < 0 ? current + 1 : current - 1); restart(); }
-  });
-
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { apply(); }
-  else { apply(); start(); }
 })();
 
 /* ---------- 견적 문의 폼 ----------
@@ -762,11 +679,11 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
 
   var FIELD_LABELS = {
     company: '회사명', name: '담당자명', phone: '연락처', email: '이메일',
-    services: '필요한 서비스', message: '문의 내용', qty: '필요한 대수',
+    purpose: '도입 목적', services: '필요한 서비스', message: '문의 내용', qty: '필요한 대수',
     region: '설치 희망 지역', current: '현재 사용 중인 기종',
     volume: '월 예상 출력량', branches: '지점 수'
   };
-  var FIELD_ORDER = ['company', 'name', 'phone', 'email', 'services', 'message',
+  var FIELD_ORDER = ['company', 'name', 'phone', 'email', 'purpose', 'services', 'message',
     'qty', 'region', 'current', 'volume', 'branches'];
 
   function collect(){
@@ -802,10 +719,17 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
     if (!form.reportValidity()) return;
 
     /* 체크박스 그룹은 required 를 쓸 수 없어 직접 확인한다 */
-    var picked = form.querySelectorAll('input[name="services"]:checked');
-    if (picked.length === 0) {
-      alert('필요한 서비스를 하나 이상 선택해 주세요.');
-      return;
+    var groups = [
+      ['purpose',  '도입 목적을 하나 이상 선택해 주세요.'],
+      ['services', '필요한 서비스를 하나 이상 선택해 주세요.']
+    ];
+    for (var gi = 0; gi < groups.length; gi++) {
+      var sel = 'input[name="' + groups[gi][0] + '"]';
+      if (form.querySelectorAll(sel + ':checked').length === 0) {
+        alert(groups[gi][1]);
+        form.querySelector(sel).focus();
+        return;
+      }
     }
 
     var payload = collect();

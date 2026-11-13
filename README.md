@@ -1,6 +1,7 @@
 # AVES 랜딩페이지 (avesbiz.co.kr)
 
 복합기·프린터 임대, 원격 모니터링, 기업 IT 운영 소개 페이지.
+도입 목적 5가지를 설명하고, 견적 폼에서 그대로 고르게 한다.
 빌드 도구 없는 정적 HTML 한 장이라 `index.html`만 고치면 된다.
 
 AI 플랫폼(AIRS, airental.co.kr)은 별도 저장소 `airental-landing`에 있다.
@@ -16,7 +17,6 @@ AI 플랫폼(AIRS, airental.co.kr)은 별도 저장소 `airental-landing`에 있
 | `favicon.png` | 워드마크의 A 글자 128x128 |
 | `office-band.webp` / `.jpg` | 히어로 이미지 1 — Managed Print Services (WebP 우선) |
 | `office-band2.webp` / `.jpg` | 히어로 이미지 2 — IDP. 3초마다 교차 |
-| `mfp-1..9.webp` / `.png` | 복합기 외장 디자인 9종 (WebP 우선, PNG 폴백) |
 
 실제 AVES 워드마크를 적용했다. 원본은 흰 배경 위 빨간 단색 JPG 라서,
 녹색 채널 대비로 알파를 되돌려 투명 PNG 로 만들고 색만 바꿔 쓴다.
