@@ -82,7 +82,17 @@ h1,h2,h3,h4{margin:0;letter-spacing:-.03em;font-weight:800;line-height:1.18}
 .ext i{font-style:normal;opacity:.6;margin-left:2px}
 
 .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;
-  padding:clamp(60px,6.5vw,88px) 0 clamp(64px,7vw,92px)}
+  padding:0 0 clamp(64px,7vw,92px)}
+/* 히어로 최상단 이미지. 아래쪽을 네이비로 녹여 히어로와 이어 붙인다 */
+.hero-band{position:relative;z-index:2;margin-bottom:clamp(38px,4.4vw,62px);
+  height:clamp(190px,20vw,300px);background:var(--navy);overflow:hidden}
+.hero-band img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 38%}
+.hero-band:after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;
+  pointer-events:none;background:linear-gradient(to bottom,rgba(14,32,57,0) 0%,rgba(14,32,57,.55) 55%,var(--navy) 100%)}
+@media(max-width:720px){
+  .hero-band{height:170px}
+  .hero-band img{object-position:34% 45%}
+}
 .hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
   background-image:linear-gradient(var(--navy-line) 1px,transparent 1px),linear-gradient(90deg,var(--navy-line) 1px,transparent 1px);
   background-size:38px 38px;
@@ -268,6 +278,14 @@ footer{background:var(--navy);color:#94A9C6;padding:56px 0 26px;font-size:14px}
 </div>
 
 <section class="hero" id="top">
+  <div class="hero-band">
+    <picture>
+      <source srcset="office-band.webp" type="image/webp">
+      <img src="office-band.jpg" alt="AVES 복합기가 놓인 부산 사무실에서 직원이 노트북으로 문서 업무를 보는 모습"
+           width="1672" height="659" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+
   <div class="container hero-inner">
     <div class="eyebrow">OFFICE &amp; IT SERVICE</div>
     <h1>업무가 멈추지 않는<br>사무 환경을 만듭니다.</h1>
