@@ -14,7 +14,7 @@ AI 플랫폼(AIRS, airental.co.kr)은 별도 저장소 `airental-landing`에 있
 | `aves-logo.png` | 남색 로고 894x150 — 헤더용 (AVES + Business Solution) |
 | `aves-logo-white.png` | 흰색 로고 894x150 — 푸터용 |
 | `favicon.png` | 워드마크의 A 글자 128x128 |
-| `office-band.webp` / `.jpg` | 히어로 이미지 1 — MPS (WebP 우선) |
+| `office-band.webp` / `.jpg` | 히어로 이미지 1 — Managed Print Services (WebP 우선) |
 | `office-band2.webp` / `.jpg` | 히어로 이미지 2 — IDP. 3초마다 교차 |
 | `mfp-1..9.webp` / `.png` | 복합기 외장 디자인 9종 (WebP 우선, PNG 폴백) |
 
